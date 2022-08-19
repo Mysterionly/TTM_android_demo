@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/regExtra"
+		android:visibility = "invisible">
+		<TextView
+			android:text="It's always a pleasure to see a new face!"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView9"
+			android:textAlignment="center"
+			android:paddingTop="10dp"
+			android:paddingBottom="5dp" />
+		<TextView
+			android:text="Before we sign you up help your new friends know you better..."
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView9"
+			android:textAlignment="viewStart"
+			android:paddingTop="10dp"
+			android:paddingBottom="5dp"
+			android:layout_marginLeft="5dp" />
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/linearLayout16"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp">
+			<TextView
+				android:text="nickname"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="70dp"
+				android:layout_height="match_parent"
+				android:id="@+id/textView6"
+				android:textIsSelectable="false"
+				android:gravity="center"
+				android:textAlignment="viewEnd" />
+			<android.support.design.widget.TextInputEditText
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/textInputEditText2" />
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/linearLayout17"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp">
+			<TextView
+				android:text="gender"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="70dp"
+				android:layout_height="match_parent"
+				android:id="@+id/textView6"
+				android:textIsSelectable="false"
+				android:gravity="center"
+				android:textAlignment="viewEnd" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:id="@+id/radioGroup1">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:checked="true"
+					android:text="M"
+					android:id="@+id/radioButton1" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="F"
+					android:id="@+id/radioButton2" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Non-binary"
+					android:id="@+id/radioButton3" />
+			</RadioGroup>
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/linearLayout16"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp">
+			<TextView
+				android:text="birthday"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="70dp"
+				android:layout_height="match_parent"
+				android:id="@+id/textView6"
+				android:textIsSelectable="false"
+				android:gravity="center"
+				android:textAlignment="viewEnd" />
+			<EditText
+				android:inputType="date"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/editText1" />
+		</LinearLayout>
+		<Button
+			android:text="i am ready now!"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:id="@+id/proceedReg"
+			android:textAlignment="center"
+			android:textIsSelectable="false"
+			android:paddingTop="5dp"/>
+	</LinearLayout>
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar1"
+		android:minWidth="25px"
+		android:layout_width="match_parent"
+		android:layout_height="125px"
+		android:background="#3498db"/>
+	<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/dialAnswer"
+		android:layout_below="@+id/toolbar1">
+		<RelativeLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/relativeLayout1">
+			<FrameLayout
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_above="@+id/bottomNavigationView1"
+				android:id="@+id/frameLayout1">
+				<ListView
+					android:minWidth="25px"
+					android:minHeight="25px"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/dialList" />
+			</FrameLayout>
+			<android.support.design.widget.BottomNavigationView
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_height="60dp"
+				android:layout_width="match_parent"
+				android:layout_gravity="start"
+				android:layout_alignParentBottom="true"
+				android:id="@+id/bottomNavigationView1">
+				<LinearLayout
+					android:orientation="horizontal"
+					android:minWidth="25px"
+					android:minHeight="25px"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/linearLayout5">
+					<FrameLayout
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="0dip"
+						android:layout_height="fill_parent"
+						android:layout_weight="0.8"
+						android:id="@+id/answerText">
+						<ScrollView
+							android:minWidth="25px"
+							android:minHeight="25px"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:id="@+id/scrollView1"
+							android:background = "@drawable/bg0001">
+							<android.support.design.widget.TextInputLayout
+								android:minWidth="25px"
+								android:minHeight="25px"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:id="@+id/textInputLayout1"
+								android:layout_marginBottom="8dp">
+								<android.support.design.widget.TextInputEditText
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:id="@+id/textInputEditText3" />
+							</android.support.design.widget.TextInputLayout>
+						</ScrollView>
+					</FrameLayout>
+					<FrameLayout
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="0dip"
+						android:layout_height="fill_parent"
+						android:layout_weight="0.10"
+						android:id="@+id/sendAnswer">
+						<LinearLayout
+							android:orientation="vertical"
+							android:minWidth="25px"
+							android:minHeight="25px"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:id="@+id/linearLayout6">
+							<Button
+								android:text="Send"
+								android:layout_width="match_parent"
+								android:layout_height="45dp"
+								android:background = "#909090"
+								android:id="@+id/sendMsg"
+								android:layout_marginTop="1dp" />
+						</LinearLayout>
+					</FrameLayout>
+				</LinearLayout>
+			</android.support.design.widget.BottomNavigationView>
+		</RelativeLayout>
+	</LinearLayout>
+	<FrameLayout
+		android:id="@+id/contentScreen"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/bottom_navigation"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_below="@+id/toolbar1"
+		android:visibility = "visible">
+		<TabHost
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:id="@+id/tabHost1"
+			android:visibility="invisible">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:id="@+id/layout1">
+				<TabWidget
+					android:id="@android:id/tabs"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+				<FrameLayout
+					android:id="@android:id/tabcontent"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+					<ListView
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/inbox1" />
+					<ListView
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/inbox2" />
+				</FrameLayout>
+			</LinearLayout>
+		</TabHost>
+		<TabHost
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:id="@+id/tabHost2">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:id="@+id/linearLayout1">
+				<TabWidget
+					android:id="@android:id/tabs"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+				<FrameLayout
+					android:id="@android:id/tabcontent"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+					<LinearLayout
+						android:orientation="vertical"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/linearLayout2">
+						<RelativeLayout
+							android:minWidth="25px"
+							android:minHeight="25px"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/relativeLayout1">
+							<FrameLayout
+								android:minWidth="25px"
+								android:minHeight="25px"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_above="@+id/bottomNavigationView1"
+								android:id="@+id/frameLayout1">
+								<ScrollView
+									android:minWidth="25px"
+									android:minHeight="25px"
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:id="@+id/scrollView1"
+									android:background = "@drawable/bg0001">
+									<android.support.design.widget.TextInputLayout
+										android:minWidth="25px"
+										android:minHeight="25px"
+										android:layout_width="match_parent"
+										android:layout_height="match_parent"
+										android:id="@+id/textInputLayout1"
+										android:layout_marginBottom="8dp">
+										<android.support.design.widget.TextInputEditText
+											android:layout_width="match_parent"
+											android:layout_height="wrap_content"
+											android:id="@+id/textInputEditText1" />
+									</android.support.design.widget.TextInputLayout>
+								</ScrollView>
+							</FrameLayout>
+							<android.support.design.widget.BottomNavigationView
+								android:minWidth="25px"
+								android:minHeight="25px"
+								android:layout_height="90dp"
+								android:layout_width="match_parent"
+								android:layout_gravity="start"
+								android:layout_alignParentBottom="true"
+								android:id="@+id/bottomNavigationView1">
+								<LinearLayout
+									android:orientation="horizontal"
+									android:minWidth="25px"
+									android:minHeight="25px"
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:id="@+id/linearLayout5">
+									<FrameLayout
+										android:minWidth="25px"
+										android:minHeight="25px"
+										android:layout_width="130.0dp"
+										android:layout_height="90dp"
+										android:id="@+id/frameLayout2">
+										<LinearLayout
+											android:orientation="vertical"
+											android:minWidth="25px"
+											android:minHeight="25px"
+											android:layout_width="match_parent"
+											android:layout_height="match_parent"
+											android:id="@+id/linearLayout6">
+											<ToggleButton
+												android:layout_width="match_parent"
+												android:layout_height="45dp"
+												android:background = "#909090"
+												android:id="@+id/toggleButton1"
+												android:textOn = "public"
+												android:textOff = "private"
+												android:layout_marginTop="0dp" />
+											<Button
+												android:text="Send"
+												android:layout_width="match_parent"
+												android:layout_height="45dp"
+												android:background = "#909090"
+												android:id="@+id/button1"
+												android:layout_marginTop="1dp" />
+										</LinearLayout>
+									</FrameLayout>
+									<FrameLayout
+										android:minWidth="25px"
+										android:minHeight="25px"
+										android:layout_width="match_parent"
+										android:layout_height="match_parent"
+										android:id="@+id/frameLayout3">
+										<LinearLayout
+											android:orientation="vertical"
+											android:minWidth="25px"
+											android:minHeight="25px"
+											android:layout_width="match_parent"
+											android:layout_height="match_parent"
+											android:id="@+id/linearLayout7">
+											<ListView
+												android:minWidth="25px"
+												android:minHeight="25px"
+												android:layout_width="match_parent"
+												android:layout_height="match_parent"
+												android:id="@+id/listView1"
+												android:layout_marginBottom="0.0dp" />
+										</LinearLayout>
+									</FrameLayout>
+								</LinearLayout>
+							</android.support.design.widget.BottomNavigationView>
+						</RelativeLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:orientation="vertical"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/linearLayout3" />
+				</FrameLayout>
+			</LinearLayout>
+		</TabHost>
+		<ScrollView
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/profilePage"
+			android:visibility = "invisible">
+			<LinearLayout
+				android:orientation="vertical"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/profilePageLL"
+				android:isScrollContainer="true"
+				android:scrollbars="vertical"
+				android:verticalScrollbarPosition="left"
+				android:fadeScrollbars="true">
+				<LinearLayout
+					android:orientation="vertical"
+					android:minWidth="25px"
+					android:minHeight="25px"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/linearLayout9">
+					<ImageView
+						android:src="@android:drawable/ic_menu_gallery"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity = "center"
+						android:id="@+id/imageView1"
+						android:minHeight="100dp"
+						android:minWidth="100dp" />
+					<Button
+						android:text="Nickname"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/button5"
+						android:layout_marginBottom="5dp" />
+					<LinearLayout
+						android:orientation="horizontal"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="47.5dp"
+						android:id="@+id/linearLayout14"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp">
+						<LinearLayout
+							android:orientation="horizontal"
+							android:minWidth="25px"
+							android:minHeight="25px"
+							android:layout_width="0dp"
+							android:layout_weight=".50"
+							android:layout_height="match_parent"
+							android:id="@+id/linearLayout17">
+							<Button
+								android:text="Female"
+								android:layout_width="0dp"
+								android:layout_weight=".50"
+								android:layout_height="match_parent"
+								android:id="@+id/button3" />
+							<Button
+								android:text="25 y.o."
+								android:layout_width="0dp"
+								android:layout_weight=".50"
+								android:layout_height="match_parent"
+								android:id="@+id/button4" />
+							<Button
+								android:text="English"
+								android:layout_width="0dp"
+								android:layout_weight=".50"
+								android:layout_height="match_parent"
+								android:id="@+id/button6" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:orientation="vertical"
+					android:minWidth="25px"
+					android:minHeight="25px"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/linearLayout15">
+					<TextView
+						android:text="Connection preferences"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/textView8"
+						android:layout_marginLeft="5dp"
+						android:layout_marginRight="5dp"
+						android:layout_marginBottom="5dp"
+						android:textStyle="bold|italic"
+						android:layout_marginTop="10dp" />
+					<LinearLayout
+						android:orientation="horizontal"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="47.5dp"
+						android:id="@+id/linearLayout14"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp">
+						<TextView
+							android:text="gender"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="50dp"
+							android:layout_height="match_parent"
+							android:id="@+id/textView6"
+							android:textIsSelectable="false" />
+						<CheckBox
+							android:text="Male"
+							android:layout_width="70dp"
+							android:layout_height="30dp"
+							android:id="@+id/checkBox1"
+							android:checked="true"/>
+						<CheckBox
+							android:text="Fem"
+							android:layout_width="60dp"
+							android:layout_height="30dp"
+							android:id="@+id/checkBox2"
+							android:checked="true" />
+						<CheckBox
+							android:text="Other"
+							android:layout_width="70dp"
+							android:layout_height="30dp"
+							android:id="@+id/checkBox3"
+							android:checked="false" />
+					</LinearLayout>
+					<LinearLayout
+						android:orientation="horizontal"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/linearLayout14"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp">
+						<TextView
+							android:text="age"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="50dp"
+							android:layout_height="match_parent"
+							android:id="@+id/textView6"
+							android:textIsSelectable="false" />
+						<CheckBox
+							android:text="-20"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:id="@+id/checkBox4"
+							android:checked="true" />
+						<CheckBox
+							android:text="21-30"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:id="@+id/checkBox5"
+							android:checked="true" />
+						<CheckBox
+							android:text="31-40"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:id="@+id/checkBox6" />
+						<CheckBox
+							android:text="41-"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:id="@+id/checkBox7" />
+					</LinearLayout>
+					<LinearLayout
+						android:orientation="horizontal"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/linearLayout14"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp">
+						<TextView
+							android:text="tags"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="50dp"
+							android:layout_height="match_parent"
+							android:id="@+id/textView6"
+							android:textIsSelectable="false" />
+						<TextView
+							android:text="here appears to be a listbox"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:layout_width="0dp"
+							android:layout_weight=".50"
+							android:layout_height="match_parent"
+							android:id="@+id/textView7" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:orientation="vertical"
+					android:minWidth="25px"
+					android:minHeight="25px"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/linearLayout13">
+					<TextView
+						android:text="Private settings"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/textView5"
+						android:layout_marginLeft="5dp"
+						android:layout_marginRight="5dp"
+						android:layout_marginBottom="5dp"
+						android:textStyle="bold|italic"
+						android:layout_marginTop="10dp" />
+					<LinearLayout
+						android:orientation="horizontal"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/linearLayout14"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp">
+						<TextView
+							android:text="email"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="70dp"
+							android:layout_height="match_parent"
+							android:id="@+id/textView6"
+							android:textIsSelectable="false" />
+						<TextView
+							android:text="Medium Text"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:layout_width="0dp"
+							android:layout_weight=".50"
+							android:layout_height="match_parent"
+							android:id="@+id/textView7" />
+						<Button
+							android:text="change email"
+							android:layout_width="100dp"
+							android:layout_height="55dp"
+							android:id="@+id/button2"
+							android:textAlignment="viewStart"
+							android:textIsSelectable="false" />
+					</LinearLayout>
+					<LinearLayout
+						android:orientation="horizontal"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/linearLayout14"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp">
+						<TextView
+							android:text="password"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="70dp"
+							android:layout_height="match_parent"
+							android:id="@+id/textView6"
+							android:textIsSelectable="false"
+							android:minWidth="200dp" />
+						<TextView
+							android:text="Medium Text"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:layout_width="0dp"
+							android:layout_weight=".50"
+							android:layout_height="match_parent"
+							android:id="@+id/textView7" />
+						<Button
+							android:text="change pass"
+							android:layout_width="100dp"
+							android:layout_height="55dp"
+							android:id="@+id/button2"
+							android:textAlignment="viewStart"
+							android:textIsSelectable="false"
+							android:minWidth="200dp" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</FrameLayout>
+	<android.support.design.widget.BottomNavigationView
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_height="60dp"
+		android:layout_width="match_parent"
+		android:layout_gravity="start"
+		android:layout_alignParentBottom="true"
+		app:menu = "@menu/bottom_navigation_main"
+		android:id="@+id/bottom_navigation">
+	</android.support.design.widget.BottomNavigationView>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">TTM</string>
+  <string name="action_settings">Settings</string>
+  <string name="title_home">Inbox</string>
+  <string name="title_dashboard">Send</string>
+  <string name="title_notifications">Shop</string>
+  <string name="title_profile">Me</string>
+</resources>
